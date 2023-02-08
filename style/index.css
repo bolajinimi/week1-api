@@ -1,0 +1,164 @@
+.star-war_nav{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+img {
+    width: 100px;
+}
+.container {
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.star-war_img {
+    width:25%;
+    margin: 20px;
+   
+}
+.star-war_img  img{
+    width:80%  
+}  
+.box div{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 4px solid white;
+}
+.box div:nth-child(1){
+    top: 12%;
+    right: 42%;
+    animation: animate 10s linear infinite;
+}
+.box div:nth-child(2){
+    top: 60%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+}
+.box div:nth-child(3){
+    bottom: 17%;
+    right: 50%;
+    animation: animate 7s linear infinite;
+}
+.box div:nth-child(4){
+    top: 20%;
+    right: 60%;
+    animation: animate 10s linear infinite;
+}
+.box div:nth-child(5){
+    top: 47%;
+    left: 10%;
+    animation: animate 10s linear infinite;
+}
+.box div:nth-child(6){
+    top: 60%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+}
+.box div:nth-child(6){
+    top: 80%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+}
+.box div:nth-child(7){
+    top: 80%;
+    left: 70%;
+    animation: animate 10s linear infinite;
+}
+.box div:nth-child(8){
+    top: 12%;
+    left: 42%;
+    animation: animate 16s linear infinite;
+}
+.box div:nth-child(9){
+    top: 12%;
+    left: 42%;
+    animation: animate 9s linear infinite;
+}
+.box div:nth-child(10){
+    top: 80%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: rgb(9, 7, 8);
+    color: rgb(187, 167, 34);
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    text-align: left;
+    font-size: large;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    margin-top:5px;
+    padding: 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    width: 168px;
+    border-radius: 10px;
+
+  }
+
+
+
+
+
+@media (max-width: 600px) {
+    .accordion {
+        
+        padding: 16px;
+        width: 100%;
+        
+    }
+    .panel {
+      
+        width: 168px;
+       
+    
+    }
+    .star-war_img {
+        width:80%;
+        margin: 20px;
+       
+    }
+    .star-war_img  img{
+        width: 100%
+       
+    }
+    .panel{
+        width:88%
+    }
+}
+
+@keyframes animate {
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    } 
+    100% {
+        transform: scale(1.3) translateX(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
+  
+
+
+
+
